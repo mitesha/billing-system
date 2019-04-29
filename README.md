@@ -20,4 +20,4 @@ Demo application for billing system
 ## Code quality and test coverage
 `mvn sonar:sonar -Dsonar.host.url=http://localhost:9000` (Assuming sonarqube is running on http://localhost:9000 )
 
-![Code quality](https://github.com/mitesha/billing-system/blob/master/Code_quality_with_code_coverage.png)
+![Code quality](https://github.com/mitesha/billing-system/blob/master/Code_Quality_with_Code_Coverage.png)
