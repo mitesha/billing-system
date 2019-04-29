@@ -20,19 +20,23 @@ public class BillGenerationPostDiscountServiceImpl implements BillGenerationPost
 	/**
 	 * method is used to generate bill for user after discounts.
 	 * 
-	 * @param user
+	 * @param cust
 	 * @return
 	 */
-	public double generateBillPostDiscount(Customer user) {
-		if(null == user) {
+	public double generateBillPostDiscount(Customer cust) {
+		if(null == cust) {
 			LOGGER.error("Invalid input!");
 			return 0;
 		}
 		
-		Basket basket = user.getBasket();
-		double discount = user.getDiscount();
-		LOGGER.info("Calulate Bill for basket {}, with discount {}", basket, discount);
-		if(basket == null || basket.getItems().isEmpty()) {
+		Basket basket ;
+		double discount;		
+		
+		if((cust.getBasket() != null) && !(cust.getBasket().getItems().isEmpty())) {
+			basket = cust.getBasket();
+			discount = cust.getDiscount();
+			LOGGER.info("Calulate Bill for basket {}, with discount {}", basket, discount);
+		}else {
 			return 0;
 		}
 		

@@ -55,5 +55,11 @@ public class Product {
 	public void setType(ProductType type) {
 		this.type = type;
 	}
+	
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", type=" + type + "]";
+	}
+
 
 }

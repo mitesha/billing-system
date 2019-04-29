@@ -14,8 +14,8 @@ public interface BillGenerationPostDiscountService {
 	/**
 	 * method is used to generate bill for user after discounts.
 	 * 
-	 * @param user
+	 * @param cust
 	 * @return
 	 */
-	double generateBillPostDiscount(Customer user);
+	double generateBillPostDiscount(Customer cust);
 }

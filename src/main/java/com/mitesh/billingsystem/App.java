@@ -13,6 +13,13 @@ import com.mitesh.billingsystem.service.BillGenerationPostDiscountService;
 import com.mitesh.billingsystem.serviceImpl.BillGenerationPostDiscountServiceImpl;
 import com.mitesh.billingsystem.user.Customer;
 
+/**
+ * Main file to test jar file. 
+ * User can change input and check accordingly.
+ * 
+ * @author miteshanand
+ *
+ */
 public class App {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
@@ -29,6 +36,6 @@ public class App {
 		
 		BillGenerationPostDiscountService discountService = new BillGenerationPostDiscountServiceImpl();
 		double clientFinalBill = discountService.generateBillPostDiscount(employee);
-		LOGGER.info("Client Bill is: {}", clientFinalBill);
+		LOGGER.info("Client Bill is: {}, for basket items {}", clientFinalBill, basket.getItems());
 	}
 }
