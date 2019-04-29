@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.mitesh.billingsystem.common.Basket" project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/common/Basket.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="176" width="253" x="-203" y="426"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="2" language="java" name="com.mitesh.billingsystem.common.enums.CustomerType" project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/common/enums/CustomerType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="196" width="359" x="90" y="426"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="3" language="java" name="com.mitesh.billingsystem.user.Customer" project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/user/Customer.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="256" width="288" x="90" y="50"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.mitesh.billingsystem.common.Product" project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/common/Product.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="336" width="312" x="928" y="50"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="5" language="java" name="com.mitesh.billingsystem.common.enums.ProductType" project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/common/enums/ProductType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="136" width="268" x="972" y="426"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="6" language="java" name="com.mitesh.billingsystem.serviceImpl.BillGenerationPostDiscountServiceImpl" 
+    project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/serviceImpl/BillGenerationPostDiscountServiceImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="136" width="370" x="1280" y="50"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.mitesh.billingsystem.business.BusinessRuleDiscount" project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/business/BusinessRuleDiscount.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="136" width="443" x="489" y="426"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="8" language="java" name="com.mitesh.billingsystem.service.BillGenerationPostDiscountService" 
+    project="billing-system" 
+    file="/billing-system/src/main/java/com/mitesh/billingsystem/service/BillGenerationPostDiscountService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="96" width="332" x="1280" y="426"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="9">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="10" name="businessRuleDiscount"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="12">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <association id="13">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="14" name="type"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="17" name="customerType"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="19">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="20" name="basket"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
